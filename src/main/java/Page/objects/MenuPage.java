@@ -17,8 +17,7 @@ public class MenuPage {
 	public By shopLink = By.linkText("BOOKS");
 			
 			
-			public void navigateTo(By locator) {
-				
+			public void navigateTo(By locator) {				
 				driver.findElement(locator).click();
 				
 			}
