@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class BaseTest {
 
-public WebDriver driver;
+public static WebDriver driver;
 	
 	@BeforeClass
 	public void setup() {
@@ -21,7 +21,7 @@ public WebDriver driver;
 		driver.get("https://keybooks.ro");
 	}
 	
-	@AfterClass
+	//@AfterClass
 	public void tearDown() throws InterruptedException  {
 		Thread.sleep(5000);//bad practice
 		driver.quit();

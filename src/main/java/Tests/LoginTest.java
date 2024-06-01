@@ -6,33 +6,45 @@ import org.testng.annotations.Test;
 
 import Framework.utils.PropertiesFileProcessor;
 import Page.objects.LoginPage;
-//pom este design pattern
 import Page.objects.MenuPage;
 import Selenium.utils.BaseTest;
 
+public class LoginTest extends BaseTest{
 
+	String USER = PropertiesFileProcessor.readPropertiesFile("user", "credentials.properties");
+	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
 
-public class LoginTest extends BaseTest {
-	 String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.propeties");
-	 String USER = PropertiesFileProcessor.readPropertiesFile("user", "credentials.propeties");
-	@Test
+	
+	//@Test(priority = 1)
 	public void validLoginTest() {
 		
-		
-		MenuPage menu = new MenuPage(driver);
-		menu.navigateTo(menu.shopLink);
-		menu.navigateTo(menu.loginLink);
+		MenuPage menuPage = new MenuPage(driver);		
+		//menuPage.navigateTo(menuPage.loginLink);
+		menuPage.click(menuPage.loginLink);
 		
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.LoginInApp(USER, PASS);
+		loginPage.loginInApp(USER, PASS);
 		
-		assertTrue(loginPage.verifycheckMsgIsDisplayed(loginPage.successLoginMsg));
-		loginPage.logoutFromApp();
+		assertTrue(loginPage.checkMsgIsDisplayed(loginPage.successLoginMsg));
+		//loginPage.logoutFromApp();
+		loginPage.click(loginPage.logoutBtn);
+		
 	}
 	
 	
-	
-
+	@Test(priority = 2)
+	public void invalidLoginTest() {
+		
+		MenuPage menuPage = new MenuPage(driver);		
+		menuPage.click(menuPage.loginLink);
+		
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.loginInApp(USER, "12331231");
+		
+		assertTrue(loginPage.checkMsgIsDisplayed(loginPage.errorLoginMsg));
+		
+		
+	}
 	
 	
 }
