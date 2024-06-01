@@ -13,7 +13,6 @@ public class SingleAuthor extends SeleniumWrappers{
 		this.driver = driver;
 	}
 	
-	public By widthSyle = By.cssSelector("[class='sc_skills_total']");
-	public By label =By.cssSelector("[class='sc_skills_label']");
+	public By percent = By.cssSelector("[class='sc_skills_total']");
 	
 }

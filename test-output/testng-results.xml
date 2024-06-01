@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-01T11:24:28 EEST" name="Default suite" finished-at="2024-06-01T11:24:35 EEST" duration-ms="7302">
+  <suite started-at="2024-06-01T15:42:38 EEST" name="Default suite" finished-at="2024-06-01T15:42:47 EEST" duration-ms="9472">
     <groups>
     </groups>
-    <test started-at="2024-06-01T11:24:28 EEST" name="Default test" finished-at="2024-06-01T11:24:35 EEST" duration-ms="7302">
+    <test started-at="2024-06-01T15:42:38 EEST" name="Default test" finished-at="2024-06-01T15:42:47 EEST" duration-ms="9472">
       <class name="Tests.SingleAuthorTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.SingleAuthorTest@593aaf41]" started-at="2024-06-01T11:24:28 EEST" name="setup" finished-at="2024-06-01T11:24:32 EEST" duration-ms="4672" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.SingleAuthorTest@593aaf41]" started-at="2024-06-01T15:42:38 EEST" name="setup" finished-at="2024-06-01T15:42:42 EEST" duration-ms="4615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validTest()[pri:1, instance:Tests.SingleAuthorTest@593aaf41]" started-at="2024-06-01T11:24:32 EEST" name="validTest" finished-at="2024-06-01T11:24:35 EEST" duration-ms="2581" status="PASS">
+        <test-method signature="validTest()[pri:1, instance:Tests.SingleAuthorTest@593aaf41]" started-at="2024-06-01T15:42:42 EEST" name="validTest" finished-at="2024-06-01T15:42:47 EEST" duration-ms="4815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validTest -->

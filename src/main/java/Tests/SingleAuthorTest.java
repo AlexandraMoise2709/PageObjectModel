@@ -1,7 +1,11 @@
 package Tests;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import Page.objects.MenuPage;
@@ -17,10 +21,11 @@ public class SingleAuthorTest extends BaseTest{
 			menuPage.click(menuPage.singleAuthorLink);			
 
 			SingleAuthor singleAuthor = new SingleAuthor(driver);
-		//	singleAuthor.getStyle(singleAuthor.widthSyle, "style");
+			System.out.println(singleAuthor.getElementTexts(singleAuthor.percent).get(2));
 			
-			System.out.println(singleAuthor.getText(singleAuthor.widthSyle));
-			System.out.println(singleAuthor.getText(singleAuthor.label));
+			assertEquals(singleAuthor.getElementTexts(singleAuthor.percent).get(0),"95%");
+			assertEquals(singleAuthor.getElementTexts(singleAuthor.percent).get(1),"75%");
+			assertEquals(singleAuthor.getElementTexts(singleAuthor.percent).get(2),"82%");
 		}
 
 }

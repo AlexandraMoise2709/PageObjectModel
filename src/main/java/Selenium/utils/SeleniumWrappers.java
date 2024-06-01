@@ -1,6 +1,8 @@
 package Selenium.utils;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -50,12 +52,20 @@ public class SeleniumWrappers extends BaseTest{
 		
 	}
 	
-	public String getText(By locator) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));		
-		return driver.findElement(locator).getText();		
+	
+	 public List<String> getElementTexts(By locator) {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+			
+			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			
+	        List<WebElement> elements = driver.findElements(locator);
+	        List<String> elementTexts = new ArrayList<>();
+	        
+	        for (WebElement element : elements) {
+	            elementTexts.add(element.getText());
+	        }
+	        
+	        return elementTexts;
+	    }
 	}
 	
-	
-	
-}
