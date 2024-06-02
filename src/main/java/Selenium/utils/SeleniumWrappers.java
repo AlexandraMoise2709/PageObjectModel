@@ -2,7 +2,10 @@ package Selenium.utils;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -53,9 +56,8 @@ public class SeleniumWrappers extends BaseTest{
 	}
 	
 	
-	 public List<String> getElementTexts(By locator) {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-			
+	 public List<String> getElementListTexts(By locator) {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));			
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 			
 	        List<WebElement> elements = driver.findElements(locator);
@@ -67,5 +69,12 @@ public class SeleniumWrappers extends BaseTest{
 	        
 	        return elementTexts;
 	    }
+
+		public boolean elementIsDisplayed(By locator) {
+			
+			return driver.findElement(locator).isDisplayed();
+		}
+	
+	 
 	}
 	
