@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 
 import Page.objects.LoginPage;
 import Page.objects.MenuPage;
-import Page.objects.Search;
 import Selenium.utils.BaseTest;
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
@@ -20,7 +19,7 @@ public class SearchTest extends BaseTest{
 	@Test(priority = 1)
 		public void searchItem() {
 			
-			Search search = new Search(driver);		
+			MenuPage search = new MenuPage(driver);		
 			//menuPage.navigateTo(menuPage.loginLink);
 			//search.click(search.searchBTN);
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

@@ -19,6 +19,14 @@ public class MenuPage extends SeleniumWrappers{
 	public By shopLink = By.linkText("BOOKS");
 	public By contactsLink = By.linkText("CONTACTS");
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
+	public By searchBTN  = By.cssSelector("button[type='submit'][title='Open search']");
+	public By bookKing =By.cssSelector("h6 a[href*='the-wicked-king']");
+	public By category=By.cssSelector("span [href*='new-releases']");
+	public By productID=By.cssSelector("span[class='product_id']");
+	public By galeryPhotos1 =By.cssSelector("li img[src*='TheWickedKing1']");
+	public By galeryPhotos2 =By.cssSelector("li img[src*='TheWickedKing2']");
+	public By galeryPhotos3 =By.cssSelector("li img[src*='TheWickedKing3']");
+	public By galeryPhotos4 =By.cssSelector("li img[src*='TheWickedKing4']");
 	
 /*	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
