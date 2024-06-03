@@ -28,9 +28,7 @@ public class MenuPage extends SeleniumWrappers{
 	public By galeryPhotos3 =By.cssSelector("li img[src*='TheWickedKing3']");
 	public By galeryPhotos4 =By.cssSelector("li img[src*='TheWickedKing4']");
 	
-/*	public void navigateTo(By locator) {
-		driver.findElement(locator).click();
-	}*/
+
 	
 	
 	
