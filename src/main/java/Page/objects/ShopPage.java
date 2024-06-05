@@ -7,32 +7,46 @@ import org.openqa.selenium.support.ui.Select;
 
 import Selenium.utils.SeleniumWrappers;
 
-public class ShopPage extends SeleniumWrappers {
 
+public class ShopPage extends SeleniumWrappers{
+	
 	public WebDriver driver;
 	
-	public  ShopPage(WebDriver driver) {
+	public ShopPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
+	
 	public By sortingDropdown = By.name("orderby");
 	
+	
 	public void selectByValue(String value) {
-		
 		WebElement element = driver.findElement(sortingDropdown);
 		Select select = new Select(element);
-		select.selectByValue(value);
+		select.selectByValue(value);	
 	}
+	
+	
+	public void selectByIndex(int index) {
+		WebElement element = driver.findElement(sortingDropdown);
+		Select select = new Select(element);
+		select.selectByIndex(index);
+	}
+	
+	public void selectByVisibleText(String visibleText) {
+		WebElement element = driver.findElement(sortingDropdown);
+		Select select = new Select(element);
+		select.selectByVisibleText(visibleText);	
+	}
+	
+	
 	
 	public String getSelectedOption() {
-		
 		WebElement element = driver.findElement(sortingDropdown);
 		Select select = new Select(element);
-		return select.getFirstSelectedOption().getText();
-
+		return select.getFirstSelectedOption().getText();	
 	}
 	
 	
-	
-	
+
 }
