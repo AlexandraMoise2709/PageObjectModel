@@ -1,3 +1,4 @@
+package Tests;
 
 import static org.testng.Assert.assertEquals;
 

@@ -1,5 +1,7 @@
 package Tests;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -61,7 +63,7 @@ public class XpathExample extends BaseTest{
 	}
 	
 	@Test(priority = 2)
-	public void xpathExample2() {
+	public void xpathExample2() throws InterruptedException {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 
 		
@@ -108,7 +110,17 @@ public class XpathExample extends BaseTest{
 				(By.xpath("(//span[@class='nobr'])[3]"));
 		jse.executeScript("arguments[0].setAttribute"
 				+ "('style', 'background:yellow; border:4px solid green;')", statusTabHeader);
-	}
+		
 	
-
+				List<WebElement> orders =
+						driver.findElements(By.xpath("//td[@data-title='Order']/a[not(contains(text(), '1720'))"));
+				
+				for(WebElement order:orders) {
+				jse.executeScript("arguments[0].setAttribute"
+						+ "('style', 'background:yellow; border:4px solid green;')", order);
+				
+				Thread.sleep(3000);
+				}
+				
+}
 }
