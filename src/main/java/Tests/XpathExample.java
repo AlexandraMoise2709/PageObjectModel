@@ -11,6 +11,7 @@ import Framework.utils.PropertiesFileProcessor;
 import Selenium.utils.BaseTest;
 
 
+
 public class XpathExample extends BaseTest{
 	String USER = PropertiesFileProcessor.readPropertiesFile("user", "credentials.properties");
 	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
@@ -110,7 +111,6 @@ public class XpathExample extends BaseTest{
 		jse.executeScript("arguments[0].setAttribute"
 				+ "('style', 'background:yellow; border:4px solid green;')", statusTabHeader);
 		
-<<<<<<< HEAD
 		
 		/*
 		 * 
@@ -141,18 +141,3 @@ public class XpathExample extends BaseTest{
 	
 
 }
-=======
-	
-				List<WebElement> orders =
-						driver.findElements(By.xpath("//td[@data-title='Order']/a[not(contains(text(), '1720'))"));
-				
-				for(WebElement order:orders) {
-				jse.executeScript("arguments[0].setAttribute"
-						+ "('style', 'background:yellow; border:4px solid green;')", order);
-				
-				Thread.sleep(3000);
-				}
-				
-}
-}
->>>>>>> cfa943b59f1d4329a1892e1ae1ab11dfed763258

@@ -1,6 +1,6 @@
 package Tests;
 
-<<<<<<< HEAD
+
 import org.testng.annotations.Test;
 
 import Page.objects.MenuPage;
@@ -35,8 +35,3 @@ public class ActionClassExample extends BaseTest {
 	
 	
 }
-=======
-public class ActionClassExample {
-
-}
->>>>>>> cfa943b59f1d4329a1892e1ae1ab11dfed763258
