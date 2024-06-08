@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-05T18:47:43 EEST" name="Default suite" finished-at="2024-06-05T18:47:54 EEST" duration-ms="10949">
+  <suite started-at="2024-06-08T09:17:52 EEST" name="Default suite" finished-at="2024-06-08T09:18:00 EEST" duration-ms="8664">
     <groups>
     </groups>
-    <test started-at="2024-06-05T18:47:43 EEST" name="Default test" finished-at="2024-06-05T18:47:54 EEST" duration-ms="10949">
-      <class name="Tests.XpathExample">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.XpathExample@7c711375]" started-at="2024-06-05T18:47:43 EEST" name="setup" finished-at="2024-06-05T18:47:47 EEST" duration-ms="4623" status="PASS">
+    <test started-at="2024-06-08T09:17:52 EEST" name="Default test" finished-at="2024-06-08T09:18:00 EEST" duration-ms="8664">
+      <class name="Tests.SingleAuthorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.SingleAuthorTest@593aaf41]" started-at="2024-06-08T09:17:52 EEST" name="setup" finished-at="2024-06-08T09:17:57 EEST" duration-ms="4788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="xpathExample()[pri:1, instance:Tests.XpathExample@7c711375]" started-at="2024-06-05T18:47:47 EEST" name="xpathExample" finished-at="2024-06-05T18:47:52 EEST" duration-ms="4409" status="PASS">
+        <test-method signature="validTest()[pri:1, instance:Tests.SingleAuthorTest@593aaf41]" started-at="2024-06-08T09:17:57 EEST" name="validTest" finished-at="2024-06-08T09:18:00 EEST" duration-ms="3829" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- xpathExample -->
-        <test-method signature="xpathExample2()[pri:2, instance:Tests.XpathExample@7c711375]" started-at="2024-06-05T18:47:52 EEST" name="xpathExample2" finished-at="2024-06-05T18:47:54 EEST" duration-ms="1865" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- xpathExample2 -->
-      </class> <!-- Tests.XpathExample -->
+        </test-method> <!-- validTest -->
+      </class> <!-- Tests.SingleAuthorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

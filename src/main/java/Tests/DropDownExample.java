@@ -1,13 +1,12 @@
+package Tests;
 
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
 import Page.objects.MenuPage;
-import Selenium.utils.BaseTest;
 import Page.objects.ShopPage;
-
-
+import Selenium.utils.BaseTest;
 
 public class DropDownExample extends BaseTest{
 	

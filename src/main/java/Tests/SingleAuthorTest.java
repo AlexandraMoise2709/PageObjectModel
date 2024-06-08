@@ -16,11 +16,11 @@ public class SingleAuthorTest extends BaseTest{
 			menuPage.click(menuPage.singleAuthorLink);			
 
 			SingleAuthor singleAuthor = new SingleAuthor(driver);
-			System.out.println(singleAuthor.getElementListTexts(singleAuthor.percent).get(1));
+			System.out.println(singleAuthor.getElementText(singleAuthor.percent));
 			
-			assertEquals(singleAuthor.getElementListTexts(singleAuthor.percent).get(0),"95%");
-			assertEquals(singleAuthor.getElementListTexts(singleAuthor.percent).get(1),"75%");
-			assertEquals(singleAuthor.getElementListTexts(singleAuthor.percent).get(2),"82%");
+			assertEquals(singleAuthor.getElementTexts(singleAuthor.percent).get(0),"95%");
+			assertEquals(singleAuthor.getElementTexts(singleAuthor.percent).get(1),"75%");
+			assertEquals(singleAuthor.getElementTexts(singleAuthor.percent).get(2),"82%");
 		}
 
 }

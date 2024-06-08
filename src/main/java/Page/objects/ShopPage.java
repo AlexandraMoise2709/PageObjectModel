@@ -15,9 +15,10 @@ public class ShopPage extends SeleniumWrappers{
 	public ShopPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
-	
 	public By sortingDropdown = By.name("orderby");
+	public By priceSliderLeft = By.xpath("//span[@style='left: 0%;']");
+	public By priceSliderRight = By.xpath("//span[@style='left: 100%;']");
+	
 	
 	
 	public void selectByValue(String value) {
@@ -46,7 +47,5 @@ public class ShopPage extends SeleniumWrappers{
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();	
 	}
-	
-	
 
 }
