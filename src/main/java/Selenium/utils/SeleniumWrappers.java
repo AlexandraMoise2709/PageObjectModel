@@ -20,7 +20,12 @@ public class SeleniumWrappers extends BaseTest{
 	
 	//WebElement element  =  driver.findElement(locator)
 	//element.click();
-	
+	/**
+	 * Wrapper method over selenium default click() enhanced with;
+	 * 
+	 * 
+	 * @param locator
+	 */
 	public void click(By locator) {
 	
 		try {
@@ -93,6 +98,18 @@ public class SeleniumWrappers extends BaseTest{
 			.perform();
 	}
 	
+	public void scrollVericaly(int y) {
+		
+		Actions action = new Actions(driver);
+		action.scrollByAmount(0, y).perform();
+		
+	}
+	
+	public void scrollHorizontally() {
+		
+		
+		
+	}
 	 
 	}
 	
