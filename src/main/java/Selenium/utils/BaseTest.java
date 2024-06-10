@@ -21,7 +21,7 @@ public static WebDriver driver;
 		driver.get("https://keybooks.ro");
 	}
 	
-	//@AfterClass
+	@AfterClass
 	public void tearDown() throws InterruptedException  {
 		Thread.sleep(5000);//bad practice
 		driver.quit();

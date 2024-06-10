@@ -9,10 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import Page.objects.LoginPage;
+
 import Page.objects.MenuPage;
 import Selenium.utils.BaseTest;
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class SearchTest extends BaseTest{
 
