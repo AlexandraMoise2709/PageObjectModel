@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-10T21:31:19 EEST" name="Default suite" finished-at="2024-06-10T21:31:41 EEST" duration-ms="22375">
+  <suite started-at="2024-06-12T21:21:50 EEST" name="Default suite" finished-at="2024-06-12T21:21:56 EEST" duration-ms="5924">
     <groups>
     </groups>
-    <test started-at="2024-06-10T21:31:19 EEST" name="Default test" finished-at="2024-06-10T21:31:41 EEST" duration-ms="22375">
-      <class name="Tests.ScrollExample">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.ScrollExample@57cf54e1]" started-at="2024-06-10T21:31:19 EEST" name="setup" finished-at="2024-06-10T21:31:24 EEST" duration-ms="4994" status="PASS">
+    <test started-at="2024-06-12T21:21:50 EEST" name="Default test" finished-at="2024-06-12T21:21:56 EEST" duration-ms="5924">
+      <class name="Tests.JavaScriptExecutorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.JavaScriptExecutorTest@7c711375]" started-at="2024-06-12T21:21:50 EEST" name="setup" finished-at="2024-06-12T21:21:56 EEST" duration-ms="5792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="scrollDownAndTop()[pri:0, instance:Tests.ScrollExample@57cf54e1]" started-at="2024-06-10T21:31:24 EEST" name="scrollDownAndTop" finished-at="2024-06-10T21:31:36 EEST" duration-ms="12089" status="PASS">
+        <test-method signature="example3()[pri:0, instance:Tests.JavaScriptExecutorTest@7c711375]" started-at="2024-06-12T21:21:56 EEST" name="example3" finished-at="2024-06-12T21:21:56 EEST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollDownAndTop -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ScrollExample@57cf54e1]" started-at="2024-06-10T21:31:36 EEST" name="tearDown" finished-at="2024-06-10T21:31:41 EEST" duration-ms="5246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.ScrollExample -->
+        </test-method> <!-- example3 -->
+      </class> <!-- Tests.JavaScriptExecutorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

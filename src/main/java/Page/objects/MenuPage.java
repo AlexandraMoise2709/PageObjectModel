@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import Selenium.utils.SeleniumWrappers;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 
 public class MenuPage extends SeleniumWrappers{
@@ -26,10 +27,16 @@ public class MenuPage extends SeleniumWrappers{
 	public By bookKing =By.cssSelector("h6 a[href*='the-wicked-king']");
 	public By category=By.cssSelector("span [href*='new-releases']");
 	public By productID=By.cssSelector("span[class='product_id']");
+	public By iconField=By.cssSelector("div[class='top_panel_middle'] input");
+	//div[class='top_panel_middle'] button[class*='icon-search']
+	public By iconSearch=By.cssSelector("div[class='top_panel_middle'] button[class*='icon-search']");
+
 	public By galeryPhotos1 =By.cssSelector("li img[src*='TheWickedKing1']");
 	public By galeryPhotos2 =By.cssSelector("li img[src*='TheWickedKing2']");
 	public By galeryPhotos3 =By.cssSelector("li img[src*='TheWickedKing3']");
 	public By galeryPhotos4 =By.cssSelector("li img[src*='TheWickedKing4']");
+	
+
 	
 
 	

@@ -1,7 +1,5 @@
 package Tests;
 
-import java.awt.Desktop.Action;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -52,9 +50,6 @@ public class ScrollExample extends BaseTest {
 	
 	@Test
 	public void scrollDownAndTop() throws InterruptedException {
-		
-
-		
 	
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");

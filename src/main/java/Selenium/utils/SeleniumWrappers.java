@@ -36,8 +36,13 @@ public class SeleniumWrappers extends BaseTest{
 			
 		}catch(NoSuchElementException e) {
 			
-		}	
-	}
+		}
+	}	
+		public WebElement getWebElement(By locator) {
+			
+			return driver.findElement(locator);
+		}
+	
 	
 	
 	public void sendKeys(By locator, String text) {
