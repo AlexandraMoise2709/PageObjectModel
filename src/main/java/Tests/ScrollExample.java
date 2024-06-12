@@ -50,9 +50,6 @@ public class ScrollExample extends BaseTest {
 	
 	@Test
 	public void scrollDownAndTop() throws InterruptedException {
-		
-
-		
 	
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
