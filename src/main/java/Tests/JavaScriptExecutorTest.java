@@ -1,5 +1,7 @@
 package Tests;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -33,7 +35,7 @@ public class JavaScriptExecutorTest extends BaseTest{
 		driver.get(driver.getCurrentUrl());
 	}
 	
-		@Test
+		//@Test
 	public void example2() {
 		MenuPage menu = new MenuPage(driver);
 //		jse.executeScript("arguments[0].click()", menu.getWebElement(menu.iconSearch));
@@ -52,5 +54,32 @@ public class JavaScriptExecutorTest extends BaseTest{
 		
 		String bookTitle = jse.executeScript("return document.getElementsByClassName('post_title')[0].childNodes[0].innerText").toString();
 		System.out.println(bookTitle);
+		
+		//document.getElementsByClassName('post_title')[0].childNodes[0].click()
+
+
+		String curentUrl =jse.executeScript("return document.URL").toString();
+		System.out.println(curentUrl);
+		
+		assertEquals(curentUrl,"https://keybooks.ro/shop/a-hundred-and-one-receipes/");
+		jse.executeScript("document.getElementById('tab-title-reviews').children[0].click()");
+		
+		jse.executeScript("window.scrollBy(0, 900)");
+		
 	}
-}
+		
+		
+
+		@Test
+	public void example3() {
+			
+			System.out.println(driver.getTitle());
+			
+			String schimbTitlulPaginii = "window.obj = function() {document.title = 'Am schimbat functia mea'};" + "window.obj.call();";
+			
+			jse.executeScript(schimbTitlulPaginii);
+			
+			System.out.println(driver.getTitle());
+			
+			
+}}
