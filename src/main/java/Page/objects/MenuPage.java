@@ -28,8 +28,8 @@ public class MenuPage extends SeleniumWrappers{
 	public By category=By.cssSelector("span [href*='new-releases']");
 	public By productID=By.cssSelector("span[class='product_id']");
 	public By iconField=By.cssSelector("div[class='top_panel_middle'] input");
-	//div[class='top_panel_middle'] button[class*='icon-search']
-	public By iconSearch=By.cssSelector("div[class='top_panel_middle'] button[class*='icon-search']");
+	public By iconSearch = By.cssSelector("div[class='top_panel_middle'] button[class*='icon-search']");
+	public By searchField = By.cssSelector("div[class='top_panel_middle'] input");
 
 	public By galeryPhotos1 =By.cssSelector("li img[src*='TheWickedKing1']");
 	public By galeryPhotos2 =By.cssSelector("li img[src*='TheWickedKing2']");

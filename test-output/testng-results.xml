@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T21:21:50 EEST" name="Default suite" finished-at="2024-06-12T21:21:56 EEST" duration-ms="5924">
+  <suite started-at="2024-06-15T08:41:30 EEST" name="Default suite" finished-at="2024-06-15T08:41:38 EEST" duration-ms="7148">
     <groups>
     </groups>
-    <test started-at="2024-06-12T21:21:50 EEST" name="Default test" finished-at="2024-06-12T21:21:56 EEST" duration-ms="5924">
-      <class name="Tests.JavaScriptExecutorTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.JavaScriptExecutorTest@7c711375]" started-at="2024-06-12T21:21:50 EEST" name="setup" finished-at="2024-06-12T21:21:56 EEST" duration-ms="5792" status="PASS">
+    <test started-at="2024-06-15T08:41:30 EEST" name="Default test" finished-at="2024-06-15T08:41:38 EEST" duration-ms="7148">
+      <class name="Tests.JavascriptExecutorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.JavascriptExecutorTest@7c711375]" started-at="2024-06-15T08:41:30 EEST" name="setup" finished-at="2024-06-15T08:41:37 EEST" duration-ms="6914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="example3()[pri:0, instance:Tests.JavaScriptExecutorTest@7c711375]" started-at="2024-06-12T21:21:56 EEST" name="example3" finished-at="2024-06-12T21:21:56 EEST" duration-ms="60" status="PASS">
+        <test-method signature="example3()[pri:0, instance:Tests.JavascriptExecutorTest@7c711375]" started-at="2024-06-15T08:41:37 EEST" name="example3" finished-at="2024-06-15T08:41:38 EEST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- example3 -->
-      </class> <!-- Tests.JavaScriptExecutorTest -->
+      </class> <!-- Tests.JavascriptExecutorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

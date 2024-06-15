@@ -103,18 +103,18 @@ public class SeleniumWrappers extends BaseTest{
 			.perform();
 	}
 	
-	public void scrollVericaly(int y) {
-		
+	public void scrollVertically(int y) {
 		Actions action = new Actions(driver);
 		action.scrollByAmount(0, y).perform();
 		
 	}
 	
-	public void scrollHorizontally() {
-		
-		
-		
+	public void scrollHorizontally(int x) {
+		Actions action = new Actions(driver);
+		action.scrollByAmount(x, 0).perform();
 	}
+	
+
 	 
 	}
 	
