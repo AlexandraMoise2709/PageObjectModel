@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.JavaScriptExecutorTest">
+      <class name="Tests.HomeWorkCurs24">
         <methods>
-          <include name="example2"/>
           <include name="setup"/>
+          <include name="sortarePriceToLow"/>
         </methods>
-      </class> <!-- Tests.JavaScriptExecutorTest -->
+      </class> <!-- Tests.HomeWorkCurs24 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

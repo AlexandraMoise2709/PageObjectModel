@@ -72,6 +72,8 @@ public class SeleniumWrappers extends BaseTest{
 
         return elementTexts;
     }
+	
+	
 	public boolean elementIsDisplayed(By locator) {
 
 		return driver.findElement(locator).isDisplayed();
@@ -114,7 +116,9 @@ public class SeleniumWrappers extends BaseTest{
 		action.scrollByAmount(x, 0).perform();
 	}
 	
-
-	 
+	
+		
 	}
+
+
 	

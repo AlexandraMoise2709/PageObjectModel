@@ -1,6 +1,7 @@
 package Tests;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
