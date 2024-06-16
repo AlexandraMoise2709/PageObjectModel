@@ -22,6 +22,7 @@ public class MenuPage extends SeleniumWrappers{
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
 	public By blogLink = By.linkText("BLOG");
 	public By aboutLink = By.linkText("ABOUT");
+	public By postformats = By.cssSelector("li[id*='232'] a[href*='post-formats']");
 	
 	public By searchBTN  = By.cssSelector("button[type='submit'][title='Open search']");
 	public By bookKing =By.cssSelector("h6 a[href*='the-wicked-king']");
