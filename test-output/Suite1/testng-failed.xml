@@ -3,20 +3,14 @@
 <suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
   <parameter name="appUrl" value="https://keybooks.ro"/>
   <test thread-count="5" name="test(failed)">
-    <groups>
-      <run>
-        <include name="ShopFunctionality"/>
-        <exclude name="UserManagementFunctionality"/>
-      </run>
-    </groups>
     <classes>
-      <class name="Tests.DropDownExample">
+      <class name="Tests.DataProviderExample">
         <methods>
-          <include name="selectByVisibleTextTest"/>
-          <include name="selectByIndexTest"/>
-          <include name="selectByValueTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loginTest" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- Tests.DropDownExample -->
+      </class> <!-- Tests.DataProviderExample -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
