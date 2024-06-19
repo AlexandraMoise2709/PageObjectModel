@@ -4,13 +4,14 @@
   <parameter name="appUrl" value="https://keybooks.ro"/>
   <test thread-count="5" name="test(failed)">
     <classes>
-      <class name="Tests.DataProviderExample">
+      <class name="Tests.ContactFormTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="loginTest" invocation-numbers="0 1 2 3"/>
+          <include name="sendMessageTest"/>
+          <include name="recordFailure"/>
         </methods>
-      </class> <!-- Tests.DataProviderExample -->
+      </class> <!-- Tests.ContactFormTest -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

@@ -29,6 +29,7 @@ public class MenuPage extends SeleniumWrappers{
 	public By category=By.cssSelector("span [href*='new-releases']");
 	public By productID=By.cssSelector("span[class='product_id']");
 	public By iconField=By.cssSelector("div[class='top_panel_middle'] input");
+	
 	public By iconSearch = By.cssSelector("div[class='top_panel_middle'] button[class*='icon-search']");
 	public By searchField = By.cssSelector("div[class='top_panel_middle'] input");
 
@@ -37,8 +38,13 @@ public class MenuPage extends SeleniumWrappers{
 	public By galeryPhotos3 =By.cssSelector("li img[src*='TheWickedKing3']");
 	public By galeryPhotos4 =By.cssSelector("li img[src*='TheWickedKing4']");
 	
-
 	
+	public void search(String searchValue) {
+		
+		click(iconSearch);
+		sendKeys(searchField,searchValue);
+		click(iconSearch);
+	}
 
 	
 	
