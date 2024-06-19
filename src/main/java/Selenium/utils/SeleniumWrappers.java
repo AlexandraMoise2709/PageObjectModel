@@ -27,7 +27,7 @@ public class SeleniumWrappers extends BaseTest{
 	 * @param locator
 	 */
 	public void click(By locator) {
-	
+		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -36,8 +36,8 @@ public class SeleniumWrappers extends BaseTest{
 			
 		}catch(NoSuchElementException e) {
 			
-		}
-	}	
+		}	
+	}
 		public WebElement getWebElement(By locator) {
 			
 			return driver.findElement(locator);

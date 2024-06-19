@@ -19,7 +19,7 @@ public static JavascriptExecutor jse;
 	public void setup(String url) {
 		
 		driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/dynamic_loading/2");
+		//driver.get("https://the-internet.herokuapp.com/dynamic_loading/2");
 		driver.manage().window().maximize();
 		//driver.get("https://keybooks.ro");
 		driver.get(url);
