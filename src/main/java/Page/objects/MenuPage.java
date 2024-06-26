@@ -29,6 +29,11 @@ public class MenuPage extends SeleniumWrappers{
 	public By category=By.cssSelector("span [href*='new-releases']");
 	public By productID=By.cssSelector("span[class='product_id']");
 	public By iconField=By.cssSelector("div[class='top_panel_middle'] input");
+	public By facebookBtn=By.cssSelector("div a[href*='facebook']");
+	public By twitterBtn=By.cssSelector("div a[href*='twitter']");
+	public By instagramBtn=By.cssSelector("div a[href*='instagram']");
+	
+	
 	
 	public By iconSearch = By.cssSelector("div[class='top_panel_middle'] button[class*='icon-search']");
 	public By searchField = By.cssSelector("div[class='top_panel_middle'] input");

@@ -23,7 +23,7 @@ public class ContactsPage extends SeleniumWrappers {
 	
 	public By zoomInBtn = By.cssSelector("button[title='Zoom in']");
 	public By zoomOutBtn = By.cssSelector("button[title='Zoom out']");
-	public By iFrame = By.tagName("iframe")
+	public By iframe = By.tagName("iframe")
 ;	
 	//metode
 	
