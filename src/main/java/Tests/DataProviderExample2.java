@@ -10,7 +10,6 @@ import Selenium.utils.BaseTest;
 import TestData.DataProviderClass;
 
 
-
 public class DataProviderExample2 extends BaseTest {
 
 	

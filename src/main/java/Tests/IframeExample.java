@@ -18,7 +18,7 @@ public class IframeExample extends BaseTest{
 				
 		ContactsPage contactPage =  new ContactsPage(driver);
 		
-		driver.switchTo().frame(driver.findElement(contactPage.iFrame));
+		driver.switchTo().frame(driver.findElement(contactPage.iframe));
 		contactPage.click(contactPage.zoomInBtn);
 		contactPage.click(contactPage.zoomInBtn);
 

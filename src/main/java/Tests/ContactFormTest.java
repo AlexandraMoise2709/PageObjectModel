@@ -10,14 +10,13 @@ import Page.objects.LoginPage;
 import Page.objects.MenuPage;
 import Selenium.utils.BaseTest;
 
-
 public class ContactFormTest extends BaseTest {
 	
 	String USER = PropertiesFileProcessor.readPropertiesFile("user", "credentials.properties");
 	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
 
 	
-	@Test(groups="UserManagementFunctionality")
+	@Test(groups = "UserManagementFunctionality")
 	public void sendMessageTest() {
 		MenuPage menuPage = new MenuPage(driver);
 		menuPage.click(menuPage.loginLink);
@@ -34,7 +33,7 @@ public class ContactFormTest extends BaseTest {
 				"Can I join?");
 		
 		assertEquals(contactPage.getElementText(contactPage.sentMsg), 
-				"Thank you for your message. It has been sent.X");
+				"Thank you for your message. It has been sent.x");
 	}
 	
 

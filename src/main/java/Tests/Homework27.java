@@ -1,5 +1,7 @@
 package Tests;
 
-public class Homework27 {
+import Selenium.utils.BaseTest;
+
+public class Homework27 extends BaseTest {
 
 }
