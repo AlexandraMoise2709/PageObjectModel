@@ -4,14 +4,13 @@
   <parameter name="appUrl" value="https://keybooks.ro"/>
   <test thread-count="5" name="test(failed)">
     <classes>
-      <class name="Tests.Homework27">
+      <class name="Tests.Homework26">
         <methods>
-          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="clickPeSocialMedia"/>
+          <include name="categorieCarte"/>
           <include name="recordFailure"/>
         </methods>
-      </class> <!-- Tests.Homework27 -->
+      </class> <!-- Tests.Homework26 -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
