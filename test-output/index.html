@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite1" class="navigator-link">
-              <span class="suite-name border-passed">Suite1</span>
+              <span class="suite-name border-failed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
-                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
                     </span>
-                    <div class="method-list-content passed suite-Suite1">
+                    <div class="method-list-content failed suite-Suite1">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="Tests.Homework26" class="method navigator-link" hash-for-method="categorieCarte">categorieCarte</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Tests.Homework22" class="method navigator-link" hash-for-method="shipAdressValidation">shipAdressValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite1 -->
+                    </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,21 +119,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-passed">
+          <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.Homework26</span>
+              <img src="failed.png"/>
+              <span class="class-name">Tests.Homework22</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="categorieCarte">
-                  </a> <!-- categorieCarte -->
-                  <span class="method-name">categorieCarte</span>
+                  <a name="shipAdressValidation">
+                  </a> <!-- shipAdressValidation -->
+                  <span class="method-name">shipAdressValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;span&quot;
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at Tests.Homework22.shipAdressValidation(Homework22.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-passed -->
+          </div> <!-- suite-Suite1-class-failed -->
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -147,7 +156,7 @@
   &lt;parameter name=&quot;appUrl&quot; value=&quot;https://keybooks.ro&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.Homework26&quot;/&gt;
+      &lt;class name=&quot;Tests.Homework22&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -189,14 +198,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'categorieCarte')
-data.setCell(0, 2, 'Tests.Homework26')
-data.setCell(0, 3, 22713);
+data.setCell(0, 1, 'shipAdressValidation')
+data.setCell(0, 2, 'Tests.Homework22')
+data.setCell(0, 3, 2090);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -222,18 +231,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.Homework26</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.Homework22</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(https://keybooks.ro)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">categorieCarte</span>
-                <span class="method-start">7603 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">shipAdressValidation</span>
+                <span class="method-start">2578 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">recordFailure([TestResult name=categorieCarte status=SUCCESS method=Homework26.categorieCarte()[pri:0, instance:Te...)</span>
-                <span class="method-start">30350 ms</span>
+                <span class="method-name">recordFailure([TestResult name=shipAdressValidation status=FAILURE method=Homework22.shipAdressValidation()[pri:0,...)</span>
+                <span class="method-start">4674 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

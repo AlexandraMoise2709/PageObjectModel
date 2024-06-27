@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-26T10:07:02 EEST" name="Suite1" finished-at="2024-06-26T10:07:32 EEST" duration-ms="30392">
+  <suite started-at="2024-06-26T12:25:02 EEST" name="Suite1" finished-at="2024-06-26T12:25:07 EEST" duration-ms="4923">
     <groups>
     </groups>
-    <test started-at="2024-06-26T10:07:02 EEST" name="test" finished-at="2024-06-26T10:07:32 EEST" duration-ms="30392">
-      <class name="Tests.Homework26">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Homework26@57cf54e1]" started-at="2024-06-26T10:07:02 EEST" name="setup" finished-at="2024-06-26T10:07:10 EEST" duration-ms="7587" status="PASS">
+    <test started-at="2024-06-26T12:25:02 EEST" name="test" finished-at="2024-06-26T12:25:07 EEST" duration-ms="4923">
+      <class name="Tests.Homework22">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Homework22@5b03b9fe]" started-at="2024-06-26T12:25:02 EEST" name="setup" finished-at="2024-06-26T12:25:04 EEST" duration-ms="2569" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="categorieCarte()[pri:0, instance:Tests.Homework26@57cf54e1]" started-at="2024-06-26T10:07:10 EEST" name="categorieCarte" finished-at="2024-06-26T10:07:32 EEST" duration-ms="22713" status="PASS">
+        <test-method signature="shipAdressValidation()[pri:0, instance:Tests.Homework22@5b03b9fe]" started-at="2024-06-26T12:25:05 EEST" name="shipAdressValidation" finished-at="2024-06-26T12:25:07 EEST" duration-ms="2090" status="FAIL">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "span"
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "span"
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at Tests.Homework22.shipAdressValidation(Homework22.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- categorieCarte -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:Tests.Homework26@57cf54e1]" started-at="2024-06-26T10:07:32 EEST" name="recordFailure" finished-at="2024-06-26T10:07:32 EEST" duration-ms="5" status="PASS">
+        </test-method> <!-- shipAdressValidation -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:Tests.Homework22@5b03b9fe]" started-at="2024-06-26T12:25:07 EEST" name="recordFailure" finished-at="2024-06-26T12:25:07 EEST" duration-ms="231" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=categorieCarte status=SUCCESS method=Homework26.categorieCarte()[pri:0, instance:Tests.Homework26@57cf54e1] output={null}]]]>
+                <![CDATA[[TestResult name=shipAdressValidation status=FAILURE method=Homework22.shipAdressValidation()[pri:0, instance:Tests.Homework22@5b03b9fe] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-      </class> <!-- Tests.Homework26 -->
+      </class> <!-- Tests.Homework22 -->
     </test> <!-- test -->
   </suite> <!-- Suite1 -->
 </testng-results>
