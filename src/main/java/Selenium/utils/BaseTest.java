@@ -4,6 +4,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -14,6 +15,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.google.common.io.Files;
@@ -24,8 +26,10 @@ public class BaseTest {
 	public JavascriptExecutor jse;
 
 	
+	
+	
 	@Parameters({"appUrl"})
-	@BeforeClass(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true)
 	public void setup(String url) {
 		
 		driver = new ChromeDriver();
@@ -36,7 +40,13 @@ public class BaseTest {
 		jse = (JavascriptExecutor) driver;
 	}
 	
-	//@AfterClass(alwaysRun = true)
+//	@BeforeClass
+//	public void deleteAllCookies() {	
+//		
+//		driver.manage().deleteAllCookies();
+//	}
+	
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws InterruptedException  {
 		Thread.sleep(5000);//bad practice
 		driver.quit();
