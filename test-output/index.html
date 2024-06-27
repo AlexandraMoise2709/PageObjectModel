@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,24 @@
                     <div class="method-list-content failed suite-Suite1">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="Tests.Homework22" class="method navigator-link" hash-for-method="shipAdressValidation">shipAdressValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite1" title="Tests.CookiesLogin" class="method navigator-link" hash-for-method="cookieLogin">cookieLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Tests.CookiesLogin" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,20 +136,16 @@
           <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Tests.Homework22</span>
+              <span class="class-name">Tests.CookiesLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="shipAdressValidation">
-                  </a> <!-- shipAdressValidation -->
-                  <span class="method-name">shipAdressValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;span&quot;
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
-	at Tests.Homework22.shipAdressValidation(Homework22.java:32)
+                  <a name="cookieLogin">
+                  </a> <!-- cookieLogin -->
+                  <span class="method-name">cookieLogin</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Set.iterator()&quot; because &quot;this.cookies&quot; is null
+	at Tests.CookiesLogin.cookieLogin(CookiesLogin.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -143,6 +153,21 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.CookiesLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -156,7 +181,7 @@ Driver info: driver.version: unknown
   &lt;parameter name=&quot;appUrl&quot; value=&quot;https://keybooks.ro&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.Homework22&quot;/&gt;
+      &lt;class name=&quot;Tests.CookiesLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -196,16 +221,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'shipAdressValidation')
-data.setCell(0, 2, 'Tests.Homework22')
-data.setCell(0, 3, 2090);
+data.setCell(0, 1, 'validLoginTest')
+data.setCell(0, 2, 'Tests.CookiesLogin')
+data.setCell(0, 3, 5441);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'cookieLogin')
+data.setCell(1, 2, 'Tests.CookiesLogin')
+data.setCell(1, 3, 168);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -231,20 +260,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.Homework22</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">Tests.CookiesLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">setup(https://keybooks.ro)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">3222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">recordFailure([TestResult name=validLoginTest status=SUCCESS method=CookiesLogin.validLoginTest()[pri:1, instance:...)</span>
+                <span class="method-start">8669 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8670 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(https://keybooks.ro)</span>
+                <span class="method-start">13937 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">shipAdressValidation</span>
-                <span class="method-start">2578 ms</span>
+                <span class="method-name">cookieLogin</span>
+                <span class="method-start">16333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">recordFailure([TestResult name=shipAdressValidation status=FAILURE method=Homework22.shipAdressValidation()[pri:0,...)</span>
-                <span class="method-start">4674 ms</span>
+                <span class="method-name">recordFailure([TestResult name=cookieLogin status=FAILURE method=CookiesLogin.cookieLogin()[pri:2, instance:Tests....)</span>
+                <span class="method-start">16511 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16928 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
